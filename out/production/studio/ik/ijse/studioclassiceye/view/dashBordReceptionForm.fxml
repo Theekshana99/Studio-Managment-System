@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" fx:id="pane1" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #7B7D7D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.DashBordReceptionFormController">
+   <children>
+      <JFXButton fx:id="btnCusManage" buttonType="RAISED" layoutX="22.0" layoutY="264.0" onAction="#btnCusManageOnAction" prefHeight="47.0" prefWidth="325.0" style="-fx-background-color: #34282C; -fx-background-radius: 20;" text="Customers" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnAppointmentManage" buttonType="RAISED" layoutX="22.0" layoutY="395.0" onAction="#btnAppointmentManageOnAction" prefHeight="47.0" prefWidth="325.0" style="-fx-background-color: #34282C; -fx-background-radius: 20;" text="Appointments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnPayment" buttonType="RAISED" layoutX="23.0" layoutY="528.0" onAction="#btnPaymentOnAction" prefHeight="47.0" prefWidth="325.0" style="-fx-background-color: #34282C; -fx-background-radius: 20;" text="Payments" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <AnchorPane fx:id="pane2" layoutX="367.0" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: #424242;">
+         <children>
+            <ImageView fitHeight="855.0" fitWidth="1547.0" layoutX="2.0" layoutY="114.0">
+               <image>
+                  <Image url="@../assest/ezgif.com-gif-maker.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="110.0" fitWidth="109.0" layoutX="122.0" layoutY="40.0">
+         <image>
+            <Image url="@../assest/information-desk.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="126.0" layoutY="168.0" prefHeight="31.0" prefWidth="101.0" text="Reception">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnEmployee" buttonType="RAISED" layoutX="23.0" layoutY="666.0" onAction="#btnEmployeeOnAction" prefHeight="47.0" prefWidth="325.0" style="-fx-background-color: #34282C; -fx-background-radius: 20;" text="Employee" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="50.0" layoutY="666.0">
+         <image>
+            <Image url="@../assest/team.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnSuplier" buttonType="RAISED" layoutX="23.0" layoutY="807.0" onAction="#btnSuplierOnAction" prefHeight="47.0" prefWidth="325.0" style="-fx-background-color: #34282C; -fx-background-radius: 20;" text="Supliers" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend mode="HARD_LIGHT" />
+         </effect>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="50.0" layoutY="807.0">
+         <image>
+            <Image url="@../assest/supplier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="50.0" layoutY="395.0">
+         <image>
+            <Image url="@../assest/user%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="50.0" layoutY="264.0">
+         <image>
+            <Image url="@../assest/customer%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogOut" layoutX="92.0" layoutY="960.0" onAction="#btnLogOutOnAction" prefHeight="47.0" prefWidth="187.0" style="-fx-background-color: #F70D1A; -fx-background-radius: 40;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="50.0" layoutY="528.0">
+         <image>
+            <Image url="@../assest/salary.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

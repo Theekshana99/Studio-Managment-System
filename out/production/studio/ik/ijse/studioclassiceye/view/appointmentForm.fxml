@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneappoi" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.AppointmentFormController">
+   <children>
+      <Label layoutX="614.0" layoutY="29.0" text="Appointment Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="17.0" layoutY="168.0" prefHeight="43.0" prefWidth="82.0" text="A - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppointmentId" layoutX="119.0" layoutY="168.0" prefHeight="43.0" prefWidth="115.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1246.0" layoutY="168.0" prefHeight="43.0" prefWidth="69.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppoiDate" layoutX="1314.0" layoutY="168.0" prefHeight="43.0" prefWidth="215.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="168.0" prefHeight="43.0" prefWidth="91.0" text="Cus - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCusId" labelFloat="true" layoutX="549.0" layoutY="168.0" onAction="#cmbCusIdOnAction" prefHeight="43.0" prefWidth="167.0" promptText="Set Customer Id">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="816.0" layoutY="168.0" prefHeight="43.0" prefWidth="122.0" text="Cus - Name:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusName" layoutX="954.0" layoutY="168.0" prefHeight="43.0" prefWidth="287.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="308.0" prefHeight="43.0" prefWidth="150.0" text="Package - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbPackageId" labelFloat="true" layoutX="184.0" layoutY="308.0" onAction="#cmbPackageIdOnAction" prefHeight="43.0" prefWidth="167.0" promptText="Set Package Id">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="19.0" layoutY="468.0" prefHeight="43.0" prefWidth="142.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppoiDate11" layoutX="171.0" layoutY="507.0" prefHeight="43.0" prefWidth="367.0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="604.0" prefHeight="43.0" prefWidth="82.0" text="Price :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppointmentDescription" layoutX="174.0" layoutY="468.0" prefHeight="43.0" prefWidth="610.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddPackage" buttonType="RAISED" layoutX="529.0" layoutY="604.0" onAction="#btnAddPackageOnAction" prefHeight="43.0" prefWidth="103.0" style="-fx-background-color: #16F529; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnClearPackage" buttonType="RAISED" layoutX="667.0" layoutY="604.0" onAction="#btnClearPackageOnAction" prefHeight="43.0" prefWidth="103.0" style="-fx-background-color: #FD1C03; -fx-background-radius: 20;" text="Clear" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblPackage" layoutX="7.0" layoutY="680.0" prefHeight="260.0" prefWidth="768.0" style="-fx-background-color: #C0C0C0;">
+        <columns>
+          <TableColumn fx:id="clmAppointmentId" prefWidth="181.0" text="A_Id" />
+            <TableColumn fx:id="clmPackageID" prefWidth="178.0" text="P_Id" />
+            <TableColumn fx:id="clmReqDate" prefWidth="210.0" text="Req_Date" />
+            <TableColumn fx:id="clmPackagePrice" prefWidth="198.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="818.0" layoutY="308.0" prefHeight="43.0" prefWidth="167.0" text="Product - Code :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbProductCode" labelFloat="true" layoutX="1016.0" layoutY="308.0" onAction="#cmbProductCodeOnAction" prefHeight="43.0" prefWidth="167.0" promptText="Set Product Code">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="1199.0" layoutY="308.0" prefHeight="43.0" prefWidth="82.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="818.0" layoutY="604.0" prefHeight="43.0" prefWidth="69.0" text="Price :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddProduct" buttonType="RAISED" layoutX="1284.0" layoutY="604.0" onAction="#btnAddProductOnAction" prefHeight="43.0" prefWidth="103.0" style="-fx-background-color: #16F529; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnClearProduct" buttonType="RAISED" layoutX="1420.0" layoutY="604.0" onAction="#btnClearProductOnAction" prefHeight="43.0" prefWidth="103.0" style="-fx-background-color: #FD1C03; -fx-background-radius: 20;" text="Clear" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblProduct" layoutX="811.0" layoutY="680.0" prefHeight="260.0" prefWidth="712.0" style="-fx-background-color: #C0C0C0;">
+         <columns>
+            <TableColumn fx:id="clmAppointment" prefWidth="233.0" text="A_Id" />
+            <TableColumn fx:id="clmProductCode" prefWidth="256.0" text="Product Code" />
+            <TableColumn fx:id="clmProPrice" prefWidth="222.0" text="Qty" />
+         </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="980.0" prefHeight="43.0" prefWidth="82.0" text="TOTAL :" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppoiTotal" layoutX="141.0" layoutY="980.0" prefHeight="43.0" prefWidth="287.0" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnPlaceAppoi" buttonType="RAISED" layoutX="1239.0" layoutY="955.0" onAction="#btnPlaceAppoi" prefHeight="81.0" prefWidth="262.0" style="-fx-background-color: #16A085; -fx-background-radius: 50;" text="Place appointment">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#00ff1a" />
+                  <Stop color="#eaff02" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <Label fx:id="lblAppointmentProName" layoutX="1310.0" layoutY="309.0" prefHeight="43.0" prefWidth="215.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="818.0" layoutY="464.0" prefHeight="43.0" prefWidth="69.0" text="Qty :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppoiPrice" layoutX="920.0" layoutY="604.0" prefHeight="43.0" prefWidth="345.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPackagePrice" layoutX="108.0" layoutY="604.0" prefHeight="43.0" prefWidth="306.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1105.0" layoutY="464.0" prefHeight="43.0" prefWidth="103.0" text="Req Date :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="dateReqDate" layoutX="1240.0" layoutY="464.0" prefHeight="43.0" prefWidth="223.0" promptText="DD/MM/YYYY">
+         <defaultColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </defaultColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <JFXTextField fx:id="txtAppoiProQty" labelFloat="true" layoutX="901.0" layoutY="464.0" onAction="#txtAppoiProQtyOnAction" prefHeight="42.0" prefWidth="174.0" promptText="Qty">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnReport" layoutX="719.0" layoutY="980.0" onAction="#btnReportOnAction" prefHeight="53.0" prefWidth="150.0" style="-fx-background-color: grey; -fx-background-radius: 30;" text="Report">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

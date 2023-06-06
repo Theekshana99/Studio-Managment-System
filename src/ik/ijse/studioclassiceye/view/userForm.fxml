@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panecus" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.UserFormController">
+   <children>
+      <Label layoutX="684.0" layoutY="29.0" prefHeight="53.0" prefWidth="184.0" text="User Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="43.0" layoutY="354.0" onAction="#txtUserNameOnAction" prefHeight="31.0" prefWidth="606.0" promptText="User Name">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="43.0" layoutY="524.0" prefHeight="31.0" prefWidth="606.0" promptText="Password">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddUser" buttonType="RAISED" layoutX="43.0" layoutY="968.0" onAction="#btnAddUserOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #16F529;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnUpdateUser" buttonType="RAISED" layoutX="238.0" layoutY="968.0" onAction="#btnUpdateUserOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FDBD01;" text="Update" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDeleteUser" buttonType="RAISED" layoutX="444.0" layoutY="968.0" onAction="#btnDeleteUserOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FD1C03;" text="Delete" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <Label layoutX="43.0" layoutY="184.0" prefHeight="43.0" prefWidth="102.0" text="Emp- ID :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbEmpId" labelFloat="true" layoutX="184.0" layoutY="184.0" prefHeight="43.0" prefWidth="142.0" promptText="Set Emp_Id">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#1ced00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="43.0" layoutY="760.0" prefHeight="43.0" prefWidth="149.0" text="Date Of Birth :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="dateDateOfBirth" layoutX="241.0" layoutY="754.0" onAction="#dateDateOfBirthOnAction" prefHeight="43.0" prefWidth="268.0" promptText="DD/MM/YYYY">
+         <defaultColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </defaultColor>
+      </JFXDatePicker>
+      <Label layoutX="43.0" layoutY="623.0" prefHeight="43.0" prefWidth="69.0" text="Role :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbUserRole" layoutX="160.0" layoutY="617.0" prefHeight="43.0" prefWidth="142.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#1ced00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <TableView fx:id="tblUser" layoutX="655.0" layoutY="200.0" prefHeight="600.0" prefWidth="840.0" style="-fx-background-color: #C0C0C0;">
+         <columns>
+            <TableColumn fx:id="clmUserName" prefWidth="234.0" text="User Name" />
+            <TableColumn fx:id="clmEmpId" prefWidth="189.0" text="Employee Id" />
+            <TableColumn fx:id="clmDateOfBirth" prefWidth="235.0" text="Date Of Birth" />
+            <TableColumn fx:id="clmUserRole" prefWidth="178.0" text="Role" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

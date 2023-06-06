@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panecus" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.EmployeeFormController">
+   <children>
+      <Label layoutX="644.0" layoutY="29.0" prefHeight="53.0" prefWidth="265.0" text="Employee Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtEmployeeId" labelFloat="true" layoutX="43.0" layoutY="172.0" onAction="#txtEmployeeIdOnAction" prefHeight="43.0" prefWidth="500.0" promptText="Employee Id">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeName" labelFloat="true" layoutX="43.0" layoutY="303.0" onAction="#txtEmployeeNameOnAction" prefHeight="43.0" prefWidth="500.0" promptText="Name">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeAddress" labelFloat="true" layoutX="43.0" layoutY="437.0" onAction="#txtEmployeeAddressOnAction" prefHeight="43.0" prefWidth="500.0" promptText="Address">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmployeeContact" labelFloat="true" layoutX="42.0" layoutY="568.0" onAction="#txtEmployeeContactOnAction" prefHeight="43.0" prefWidth="500.0" promptText="Contact">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnEmployeeAdd" buttonType="RAISED" layoutX="43.0" layoutY="968.0" onAction="#btnEmployeeAddOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #16F529; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnEmployeeUpdate" buttonType="RAISED" layoutX="238.0" layoutY="968.0" onAction="#btnEmployeeUpdateOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FDBD01; -fx-background-radius: 20;" text="Update" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnEmployeeDelete" buttonType="RAISED" layoutX="444.0" layoutY="968.0" onAction="#btnEmployeeDeleteOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FD1C03; -fx-background-radius: 20;" text="Delete" textFill="WHITE">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="txtEmployeeSalary" labelFloat="true" layoutX="43.0" layoutY="703.0" onAction="#txtEmployeeSalaryOnAction" prefHeight="43.0" prefWidth="500.0" promptText="Salary">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblEmp" layoutX="610.0" layoutY="200.0" onSort="#tblEmpOnAction" prefHeight="600.0" prefWidth="910.0" style="-fx-background-color: #C0C0C0;">
+         <columns>
+            <TableColumn fx:id="clmEmpId" prefWidth="101.0" text="Employee Id" />
+            <TableColumn fx:id="clmEmpName" prefWidth="172.0" text="Name" />
+            <TableColumn fx:id="clmEmpAddress" prefWidth="162.0" text="Address" />
+            <TableColumn fx:id="clmEmpContact" prefWidth="158.0" text="Contact" />
+            <TableColumn fx:id="clmEmpSalary" prefWidth="165.0" text="Salary" />
+            <TableColumn fx:id="clmEmpRole" prefWidth="151.0" text="Role" />
+         </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="833.0" prefHeight="43.0" prefWidth="91.0" text="Role :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbEmpRole" labelFloat="true" layoutX="122.0" layoutY="833.0" onAction="#cmbEmpRoleOnAction" prefHeight="43.0" prefWidth="420.0" promptText="Set Role">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label fx:id="lblEmpId" layoutX="248.0" layoutY="222.0" prefHeight="28.0" prefWidth="91.0" style="visibility: false;" text="* Invalid Id" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmpName" layoutX="238.0" layoutY="354.0" prefHeight="28.0" prefWidth="105.0" style="visibility: false;" text="* Invalid name" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmpContact" layoutX="230.0" layoutY="618.0" prefHeight="28.0" prefWidth="125.0" style="visibility: false;" text="* Invalid Conatact" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmpSalary" layoutX="237.0" layoutY="754.0" prefHeight="28.0" prefWidth="113.0" style="visibility: false;" text="* Invalid Salary" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmpRole" layoutX="270.0" layoutY="885.0" prefHeight="28.0" prefWidth="125.0" style="visibility: false;" text="* Role is requard" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

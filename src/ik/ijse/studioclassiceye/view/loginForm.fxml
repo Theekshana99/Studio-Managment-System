@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0">
+         <image>
+            <Image url="@../assest/ezgif.com-gif-maker%20(1).jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="684.0" layoutY="221.0" opacity="0.89" prefHeight="639.0" prefWidth="552.0" style="-fx-background-color: #E2A76F; -fx-background-radius: 45;">
+         <children>
+            <TextField fx:id="txtUserName" layoutX="102.0" layoutY="211.0" onAction="#txtUserNameOnAction" prefHeight="31.0" prefWidth="389.0" promptText="Usa Name" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
+            <PasswordField fx:id="txtPassword" layoutX="102.0" layoutY="336.0" onAction="#txtPasswordOnAction" prefHeight="31.0" prefWidth="389.0" promptText="Password" style="-fx-background-radius: 40;" />
+            <Button fx:id="btnLoging" layoutX="188.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnLogingOnAction" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #4CC552; -fx-background-radius: 45;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="204.0" layoutY="48.0" prefHeight="65.0" prefWidth="145.0" text="SIGN IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="30.0" layoutY="327.0">
+               <image>
+                  <Image url="@../assest/lock%20(1).png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="36.0" layoutY="207.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white; -fx-background-radius: 50;" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="30.0" layoutY="202.0">
+               <image>
+                  <Image url="@../assest/user%20(1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUserNameAlert" layoutX="208.0" layoutY="242.0" prefHeight="21.0" prefWidth="152.0" textFill="#f50000" />
+            <Label fx:id="lblPasswordAlert" layoutX="209.0" layoutY="367.0" prefHeight="21.0" prefWidth="152.0" textFill="#f50000" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

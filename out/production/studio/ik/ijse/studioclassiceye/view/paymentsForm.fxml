@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panecus" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.PaymentsFormController">
+   <children>
+      <Label layoutX="644.0" layoutY="31.0" prefHeight="53.0" prefWidth="264.0" text="Payments Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtPaymentPrice" labelFloat="true" layoutX="35.0" layoutY="480.0" prefHeight="31.0" prefWidth="453.0" promptText="Price">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnCusPay" buttonType="RAISED" layoutX="620.0" layoutY="480.0" onAction="#btnCusPayOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #16F529; -fx-background-radius: 20;" text="Pay" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="35.0" layoutY="227.0" prefHeight="41.0" prefWidth="91.0" text="Pay - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPaymentId" layoutX="163.0" layoutY="227.0" prefHeight="41.0" prefWidth="163.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="452.0" layoutY="227.0" prefHeight="41.0" prefWidth="75.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPaymentDate" layoutX="538.0" layoutY="227.0" prefHeight="41.0" prefWidth="207.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="361.0" prefHeight="41.0" prefWidth="199.0" text="Appointment - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbAppoiId" layoutX="253.0" layoutY="356.0" onAction="#cmbAppoiIdOnAction" prefHeight="41.0" prefWidth="141.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="35.0" layoutY="601.0" prefHeight="41.0" prefWidth="122.0" text="Batch - Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBatchId" layoutX="183.0" layoutY="601.0" prefHeight="41.0" prefWidth="141.0" textFill="#0000a5">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="712.0" prefHeight="41.0" prefWidth="154.0" text="Item Code :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="216.0" layoutY="712.0" onAction="#cmbItemCodeOnAction" prefHeight="41.0" prefWidth="133.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <Label layoutX="35.0" layoutY="826.0" prefHeight="41.0" prefWidth="75.0" text="Qty :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemQty" labelFloat="true" layoutX="154.0" layoutY="826.0" prefHeight="41.0" prefWidth="163.0" promptText="Qty">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBatchPrice" labelFloat="true" layoutX="446.0" layoutY="826.0" prefHeight="41.0" prefWidth="289.0" promptText="Price">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXTextField>
+      <JFXButton fx:id="btnBatchPay" buttonType="RAISED" layoutX="620.0" layoutY="912.0" onAction="#btnBatchPayOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #16F529; -fx-background-radius: 20;" text="Pay" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="35.0" layoutY="987.0" prefHeight="45.0" prefWidth="100.0" text="TOTAL :" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalSupPay" layoutX="146.0" layoutY="987.0" prefHeight="45.0" prefWidth="274.0" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="712.0" prefHeight="41.0" prefWidth="91.0" text="Sup Id :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSupId" layoutX="589.0" layoutY="712.0" onAction="#cmbItemCodeOnAction" prefHeight="41.0" prefWidth="141.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+      </JFXComboBox>
+      <TableView fx:id="tblCusPayment" layoutX="763.0" layoutY="217.0" prefHeight="309.0" prefWidth="772.0" style="-fx-background-color: grey;">
+         <columns>
+            <TableColumn fx:id="clmPayId" prefWidth="186.0" text="Payment Id" />
+            <TableColumn fx:id="clmAppoiId" prefWidth="196.0" text="Appointment Id" />
+            <TableColumn fx:id="clmPayDate" prefWidth="210.0" text="Date" />
+            <TableColumn fx:id="clmPayPrice" prefWidth="176.0" text="Price" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblSupPayment" layoutX="763.0" layoutY="603.0" prefHeight="309.0" prefWidth="772.0" style="-fx-background-color: grey;">
+         <columns>
+            <TableColumn fx:id="batchId" prefWidth="156.0" text="Batch Id" />
+            <TableColumn fx:id="supplierId" prefWidth="166.0" text="Supplier Id" />
+            <TableColumn fx:id="itemCode" prefWidth="152.0" text="Item Code" />
+            <TableColumn fx:id="qty" prefWidth="107.0" text="Qty" />
+            <TableColumn fx:id="unitPrice" prefWidth="211.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnBatchadd" buttonType="RAISED" layoutX="477.0" layoutY="912.0" onAction="#btnBatchAddOnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: #211ee1; -fx-background-radius: 20;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

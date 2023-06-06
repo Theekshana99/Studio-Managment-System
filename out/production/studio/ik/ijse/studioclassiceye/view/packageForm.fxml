@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panecus" prefHeight="1080.0" prefWidth="1552.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.PackageFormController">
+   <children>
+      <Label layoutX="657.0" layoutY="29.0" text="Package Form">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtPackageId" labelFloat="true" layoutX="43.0" layoutY="184.0" onAction="#txtPackageIdOnAction" prefHeight="31.0" prefWidth="500.0" promptText="Package Id">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPackageDescription" labelFloat="true" layoutX="43.0" layoutY="416.0" onAction="#txtPackageDescriptionOnAction" prefHeight="31.0" prefWidth="500.0" promptText="Description">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPackagePrice" labelFloat="true" layoutX="43.0" layoutY="648.0" onAction="#txtPackagePriceOnAction" prefHeight="31.0" prefWidth="500.0" promptText="Price">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#45f21a" />
+                  <Stop color="#211ee1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddPackage" buttonType="RAISED" layoutX="43.0" layoutY="968.0" onAction="#btnAddPackageOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #16F529;" text="Add" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="238.0" layoutY="968.0" onAction="#btnUpdateOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FDBD01;" text="Update" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="444.0" layoutY="968.0" onAction="#btnDeleteOnAction" prefHeight="45.0" prefWidth="105.0" style="-fx-background-color: #FD1C03;" text="Delete" textFill="WHITE">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#2a2ad3" />
+                  <Stop color="#f01818" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblPackage" layoutX="610.0" layoutY="200.0" prefHeight="600.0" prefWidth="910.0" style="-fx-background-color: #C0C0C0;">
+         <columns>
+            <TableColumn fx:id="clmPackageId" prefWidth="180.0" text="Package ID" />
+            <TableColumn fx:id="clmPackageDescription" prefWidth="513.0" text="Description" />
+            <TableColumn fx:id="clmPackagePrice" prefWidth="216.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

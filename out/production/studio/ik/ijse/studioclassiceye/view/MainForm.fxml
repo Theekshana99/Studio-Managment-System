@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="pane" fx:id="loginpane" prefHeight="457.0" prefWidth="387.0" style="-fx-background-color: #607D8B;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.studioclassiceye.controller.LoginFormController">
+   <children>
+      <JFXTextField fx:id="txtusername" layoutX="72.0" layoutY="165.0" prefHeight="31.0" prefWidth="235.0" promptText="User Name" unFocusColor="#24c29a" />
+      <JFXTextField fx:id="txtpassword" layoutX="71.0" layoutY="264.0" prefHeight="31.0" prefWidth="235.0" promptText="Passwod" unFocusColor="#24c29a" />
+      <JFXButton fx:id="btnlogin" buttonType="RAISED" layoutX="162.0" layoutY="382.0" onAction="#btnloginonaction" style="-fx-background-color: #039BE5;" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="107.0" layoutY="54.0" text="Loging Form">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#929a1b" />
+                  <Stop color="#054316" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
